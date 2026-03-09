@@ -1,0 +1,67 @@
+body{
+text-align:center;
+background:pink;
+font-family:Arial;
+}
+
+nav{
+background:red;
+padding:15px;
+}
+
+nav a{
+color:white;
+margin:15px;
+text-decoration:none;
+font-size:18px;
+}
+
+button{
+padding:10px 20px;
+font-size:18px;
+background:red;
+color:white;
+border:none;
+cursor:pointer;
+}
+.hearts{
+position: fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+pointer-events:none;
+}
+
+.hearts span{
+position:absolute;
+bottom:-50px;
+font-size:30px;
+animation: float 6s linear infinite;
+}
+
+.hearts span:nth-child(1){ left:10%; animation-duration:5s;}
+.hearts span:nth-child(2){ left:20%; animation-duration:7s;}
+.hearts span:nth-child(3){ left:35%; animation-duration:6s;}
+.hearts span:nth-child(4){ left:50%; animation-duration:8s;}
+.hearts span:nth-child(5){ left:65%; animation-duration:5s;}
+.hearts span:nth-child(6){ left:75%; animation-duration:6s;}
+.hearts span:nth-child(7){ left:85%; animation-duration:7s;}
+.hearts span:nth-child(8){ left:95%; animation-duration:5s;}
+
+@keyframes float{
+0%{
+transform: translateY(0);
+opacity:1;
+}
+100%{
+transform: translateY(-100vh);
+opacity:0;
+}
+} 
+.gallery img{
+width:250px;
+margin:15px;
+border-radius:10px;
+box-shadow:0 4px 10px rgba(0,0,0,0.3);
+}
